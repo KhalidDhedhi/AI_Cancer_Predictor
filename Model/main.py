@@ -39,9 +39,9 @@ def main():
 
     model, scaler = TrainModel(df)
 
-    with open("model/model.pkl", "wb") as f:
+    with open("Model/model.pkl", "wb") as f:
         joblib.dump(model, f)
-    with open("model/scaler.pkl", "wb") as f:
+    with open("Model/scaler.pkl", "wb") as f:
         joblib.dump(scaler, f)
 
 if __name__ == "__main__":
